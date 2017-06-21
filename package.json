@@ -43,5 +43,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/visioncan/vscode-jss-snippets/issues"
-  }
+  },
+  "homepage": "https://github.com/visioncan/vscode-jss-snippets/blob/master/README.md"
 }
