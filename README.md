@@ -2,7 +2,7 @@
 
 ## Installation
 
-1Go to Extensions panel (⇧⌘X) and search `JSS snippets` and install.
+Go to Extensions panel (⇧⌘X) and search `JSS snippets` and install.
 
 ## Usage
 
