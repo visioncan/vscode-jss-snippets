@@ -39,14 +39,3 @@ module.exports = {
     })
   }
 }
-
-// snippets.forEach(el => {
-//   console.log('%o', 
-//     el.val = el.val
-//     .replace('|', '$0')
-//     // .replace(/^([a-z-]+)\:/, prop => camelCase(prop))
-//     .replace(/\:([a-z-]+)$/, (m, values) => {
-//       return `:\'${values}\'`
-//     })
-//   )
-// })

@@ -1,7 +1,6 @@
 const source = require('emmet/lib/snippets.json').css.snippets
 const formater = require('./libs/formater')
-const handlers = require('./libs/handlers')
-const { unsupport, adds, values, property } = handlers
+const { unsupport, adds, values, property } = require('./libs/handlers')
 
 const converter = {
   snippets: [],
@@ -12,8 +11,8 @@ const converter = {
   },
 
   handler (handlers) {
-    handlers.forEach(handler => {
-      this.snippets = handler(this.snippets)
+    handlers.forEach(handle => {
+      this.snippets = handle(this.snippets)
     })
     return this
   },
