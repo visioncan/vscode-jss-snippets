@@ -45,5 +45,9 @@
   "bugs": {
     "url": "https://github.com/visioncan/vscode-jss-snippets/issues"
   },
-  "homepage": "https://github.com/visioncan/vscode-jss-snippets/blob/master/README.md"
+  "homepage": "https://github.com/visioncan/vscode-jss-snippets/blob/master/README.md",
+  "devDependencies": {
+    "camelcase": "^4.1.0",
+    "emmet": "^1.6.3"
+  }
 }
