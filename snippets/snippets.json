@@ -1,1 +1,2586 @@
-{}
+{
+  "animation:|": {
+    "prefix": "janim",
+    "body": "animation: '$0'"
+  },
+  "animation:${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode}": {
+    "prefix": "janim-",
+    "body": "animation: '${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode}'"
+  },
+  "animation-delay:${1:time}": {
+    "prefix": "janimdel",
+    "body": "animationDelay: '${1:time}'"
+  },
+  "animation-direction:${1:normal}": {
+    "prefix": "janimdir",
+    "body": "animationDirection: '${1:normal}'"
+  },
+  "animation-direction:normal": {
+    "prefix": "janimdir:n",
+    "body": "animationDirection: 'normal'"
+  },
+  "animation-direction:reverse": {
+    "prefix": "janimdir:r",
+    "body": "animationDirection: 'reverse'"
+  },
+  "animation-direction:alternate": {
+    "prefix": "janimdir:a",
+    "body": "animationDirection: 'alternate'"
+  },
+  "animation-direction:alternate-reverse": {
+    "prefix": "janimdir:ar",
+    "body": "animationDirection: 'alternate-reverse'"
+  },
+  "animation-duration:${1:0}s": {
+    "prefix": "janimdur",
+    "body": "animationDuration: '${1:0}s'"
+  },
+  "animation-fill-mode:${1:both}": {
+    "prefix": "janimfm",
+    "body": "animationFillMode: '${1:both}'"
+  },
+  "animation-fill-mode:forwards": {
+    "prefix": "janimfm:f",
+    "body": "animationFillMode: 'forwards'"
+  },
+  "animation-fill-mode:backwards": {
+    "prefix": "janimfm:b",
+    "body": "animationFillMode: 'backwards'"
+  },
+  "animation-fill-mode:both": {
+    "prefix": "janimfm:bh",
+    "body": "animationFillMode: 'both'"
+  },
+  "animation-iteration-count:${1:1}": {
+    "prefix": "janimic",
+    "body": "animationIterationCount: '${1:1}'"
+  },
+  "animation-iteration-count:infinite": {
+    "prefix": "janimic:i",
+    "body": "animationIterationCount: 'infinite'"
+  },
+  "animation-name:${1:none}": {
+    "prefix": "janimn",
+    "body": "animationName: '${1:none}'"
+  },
+  "animation-play-state:${1:running}": {
+    "prefix": "janimps",
+    "body": "animationPlayState: '${1:running}'"
+  },
+  "animation-play-state:paused": {
+    "prefix": "janimps:p",
+    "body": "animationPlayState: 'paused'"
+  },
+  "animation-play-state:running": {
+    "prefix": "janimps:r",
+    "body": "animationPlayState: 'running'"
+  },
+  "animation-timing-function:${1:linear}": {
+    "prefix": "janimtf",
+    "body": "animationTimingFunction: '${1:linear}'"
+  },
+  "animation-timing-function:ease": {
+    "prefix": "janimtf:e",
+    "body": "animationTimingFunction: 'ease'"
+  },
+  "animation-timing-function:ease-in": {
+    "prefix": "janimtf:ei",
+    "body": "animationTimingFunction: 'ease-in'"
+  },
+  "animation-timing-function:ease-out": {
+    "prefix": "janimtf:eo",
+    "body": "animationTimingFunction: 'ease-out'"
+  },
+  "animation-timing-function:ease-in-out": {
+    "prefix": "janimtf:eio",
+    "body": "animationTimingFunction: 'ease-in-out'"
+  },
+  "animation-timing-function:linear": {
+    "prefix": "janimtf:l",
+    "body": "animationTimingFunction: 'linear'"
+  },
+  "animation-timing-function:cubic-bezier(${1:0.1}, ${2:0.7}, ${3:1.0}, ${3:0.1})": {
+    "prefix": "janimtf:cb",
+    "body": "animationTimingFunction: 'cubic-bezier(${1:0.1}, ${2:0.7}, ${3:1.0}, ${3:0.1})'"
+  },
+  "appearance:${none}": {
+    "prefix": "jap",
+    "body": "appearance: '${none}'"
+  },
+  "!important": {
+    "prefix": "j!",
+    "body": "!important"
+  },
+  "position:${1:relative}": {
+    "prefix": "jpos",
+    "body": "position: '${1:relative}'"
+  },
+  "position:static": {
+    "prefix": "jpos:s",
+    "body": "position: 'static'"
+  },
+  "position:absolute": {
+    "prefix": "jpos:a",
+    "body": "position: 'absolute'"
+  },
+  "position:relative": {
+    "prefix": "jpos:r",
+    "body": "position: 'relative'"
+  },
+  "position:fixed": {
+    "prefix": "jpos:f",
+    "body": "position: 'fixed'"
+  },
+  "top:|": {
+    "prefix": "jt",
+    "body": "top: '$0'"
+  },
+  "top:auto": {
+    "prefix": "jt:a",
+    "body": "top: 'auto'"
+  },
+  "right:|": {
+    "prefix": "jr",
+    "body": "right: '$0'"
+  },
+  "right:auto": {
+    "prefix": "jr:a",
+    "body": "right: 'auto'"
+  },
+  "bottom:|": {
+    "prefix": "jb",
+    "body": "bottom: '$0'"
+  },
+  "bottom:auto": {
+    "prefix": "jb:a",
+    "body": "bottom: 'auto'"
+  },
+  "left:|": {
+    "prefix": "jl",
+    "body": "left: '$0'"
+  },
+  "left:auto": {
+    "prefix": "jl:a",
+    "body": "left: 'auto'"
+  },
+  "z-index:|": {
+    "prefix": "jz",
+    "body": "zIndex: '$0'"
+  },
+  "z-index:auto": {
+    "prefix": "jz:a",
+    "body": "zIndex: 'auto'"
+  },
+  "float:${1:left}": {
+    "prefix": "jfl",
+    "body": "float: '${1:left}'"
+  },
+  "float:none": {
+    "prefix": "jfl:n",
+    "body": "float: 'none'"
+  },
+  "float:left": {
+    "prefix": "jfl:l",
+    "body": "float: 'left'"
+  },
+  "float:right": {
+    "prefix": "jfl:r",
+    "body": "float: 'right'"
+  },
+  "clear:${1:both}": {
+    "prefix": "jcl",
+    "body": "clear: '${1:both}'"
+  },
+  "clear:none": {
+    "prefix": "jcl:n",
+    "body": "clear: 'none'"
+  },
+  "clear:left": {
+    "prefix": "jcl:l",
+    "body": "clear: 'left'"
+  },
+  "clear:right": {
+    "prefix": "jcl:r",
+    "body": "clear: 'right'"
+  },
+  "clear:both": {
+    "prefix": "jcl:b",
+    "body": "clear: 'both'"
+  },
+  "columns:|": {
+    "prefix": "jcolm",
+    "body": "columns: '$0'"
+  },
+  "column-count:|": {
+    "prefix": "jcolmc",
+    "body": "columnCount: '$0'"
+  },
+  "column-fill:|": {
+    "prefix": "jcolmf",
+    "body": "columnFill: '$0'"
+  },
+  "column-gap:|": {
+    "prefix": "jcolmg",
+    "body": "columnGap: '$0'"
+  },
+  "column-rule:|": {
+    "prefix": "jcolmr",
+    "body": "columnRule: '$0'"
+  },
+  "column-rule-color:|": {
+    "prefix": "jcolmrc",
+    "body": "columnRuleColor: '$0'"
+  },
+  "column-rule-style:|": {
+    "prefix": "jcolmrs",
+    "body": "columnRuleStyle: '$0'"
+  },
+  "column-rule-width:|": {
+    "prefix": "jcolmrw",
+    "body": "columnRuleWidth: '$0'"
+  },
+  "column-span:|": {
+    "prefix": "jcolms",
+    "body": "columnSpan: '$0'"
+  },
+  "column-width:|": {
+    "prefix": "jcolmw",
+    "body": "columnWidth: '$0'"
+  },
+  "display:${1:block}": {
+    "prefix": "jd",
+    "body": "display: '${1:block}'"
+  },
+  "display:none": {
+    "prefix": "jd:n",
+    "body": "display: 'none'"
+  },
+  "display:block": {
+    "prefix": "jd:b",
+    "body": "display: 'block'"
+  },
+  "display:flex": {
+    "prefix": "jd:f",
+    "body": "display: 'flex'"
+  },
+  "display:inline-flex": {
+    "prefix": "jd:if",
+    "body": "display: 'inline-flex'"
+  },
+  "display:inline": {
+    "prefix": "jd:i",
+    "body": "display: 'inline'"
+  },
+  "display:inline-block": {
+    "prefix": "jd:ib",
+    "body": "display: 'inline-block'"
+  },
+  "display: inline-block\n*display: inline;\n*zoom: 1;": {
+    "prefix": "jd:ib+",
+    "body": "display:  inline-block\n*display: inline;\n*zoom:' 1;'"
+  },
+  "display:list-item": {
+    "prefix": "jd:li",
+    "body": "display: 'list-item'"
+  },
+  "display:run-in": {
+    "prefix": "jd:ri",
+    "body": "display: 'run-in'"
+  },
+  "display:compact": {
+    "prefix": "jd:cp",
+    "body": "display: 'compact'"
+  },
+  "display:table": {
+    "prefix": "jd:tb",
+    "body": "display: 'table'"
+  },
+  "display:inline-table": {
+    "prefix": "jd:itb",
+    "body": "display: 'inline-table'"
+  },
+  "display:table-caption": {
+    "prefix": "jd:tbcp",
+    "body": "display: 'table-caption'"
+  },
+  "display:table-column": {
+    "prefix": "jd:tbcl",
+    "body": "display: 'table-column'"
+  },
+  "display:table-column-group": {
+    "prefix": "jd:tbclg",
+    "body": "display: 'table-column-group'"
+  },
+  "display:table-header-group": {
+    "prefix": "jd:tbhg",
+    "body": "display: 'table-header-group'"
+  },
+  "display:table-footer-group": {
+    "prefix": "jd:tbfg",
+    "body": "display: 'table-footer-group'"
+  },
+  "display:table-row": {
+    "prefix": "jd:tbr",
+    "body": "display: 'table-row'"
+  },
+  "display:table-row-group": {
+    "prefix": "jd:tbrg",
+    "body": "display: 'table-row-group'"
+  },
+  "display:table-cell": {
+    "prefix": "jd:tbc",
+    "body": "display: 'table-cell'"
+  },
+  "display:ruby": {
+    "prefix": "jd:rb",
+    "body": "display: 'ruby'"
+  },
+  "display:ruby-base": {
+    "prefix": "jd:rbb",
+    "body": "display: 'ruby-base'"
+  },
+  "display:ruby-base-group": {
+    "prefix": "jd:rbbg",
+    "body": "display: 'ruby-base-group'"
+  },
+  "display:ruby-text": {
+    "prefix": "jd:rbt",
+    "body": "display: 'ruby-text'"
+  },
+  "display:ruby-text-group": {
+    "prefix": "jd:rbtg",
+    "body": "display: 'ruby-text-group'"
+  },
+  "visibility:${1:hidden}": {
+    "prefix": "jv",
+    "body": "visibility: '${1:hidden}'"
+  },
+  "visibility:visible": {
+    "prefix": "jv:v",
+    "body": "visibility: 'visible'"
+  },
+  "visibility:hidden": {
+    "prefix": "jv:h",
+    "body": "visibility: 'hidden'"
+  },
+  "visibility:collapse": {
+    "prefix": "jv:c",
+    "body": "visibility: 'collapse'"
+  },
+  "overflow:${1:hidden}": {
+    "prefix": "jov",
+    "body": "overflow: '${1:hidden}'"
+  },
+  "overflow:visible": {
+    "prefix": "jov:v",
+    "body": "overflow: 'visible'"
+  },
+  "overflow:hidden": {
+    "prefix": "jov:h",
+    "body": "overflow: 'hidden'"
+  },
+  "overflow:scroll": {
+    "prefix": "jov:s",
+    "body": "overflow: 'scroll'"
+  },
+  "overflow:auto": {
+    "prefix": "jov:a",
+    "body": "overflow: 'auto'"
+  },
+  "overflow-x:${1:hidden}": {
+    "prefix": "jovx",
+    "body": "overflowX: '${1:hidden}'"
+  },
+  "overflow-x:visible": {
+    "prefix": "jovx:v",
+    "body": "overflowX: 'visible'"
+  },
+  "overflow-x:hidden": {
+    "prefix": "jovx:h",
+    "body": "overflowX: 'hidden'"
+  },
+  "overflow-x:scroll": {
+    "prefix": "jovx:s",
+    "body": "overflowX: 'scroll'"
+  },
+  "overflow-x:auto": {
+    "prefix": "jovx:a",
+    "body": "overflowX: 'auto'"
+  },
+  "overflow-y:${1:hidden}": {
+    "prefix": "jovy",
+    "body": "overflowY: '${1:hidden}'"
+  },
+  "overflow-y:visible": {
+    "prefix": "jovy:v",
+    "body": "overflowY: 'visible'"
+  },
+  "overflow-y:hidden": {
+    "prefix": "jovy:h",
+    "body": "overflowY: 'hidden'"
+  },
+  "overflow-y:scroll": {
+    "prefix": "jovy:s",
+    "body": "overflowY: 'scroll'"
+  },
+  "overflow-y:auto": {
+    "prefix": "jovy:a",
+    "body": "overflowY: 'auto'"
+  },
+  "overflow-style:${1:scrollbar}": {
+    "prefix": "jovs",
+    "body": "overflowStyle: '${1:scrollbar}'"
+  },
+  "overflow-style:auto": {
+    "prefix": "jovs:a",
+    "body": "overflowStyle: 'auto'"
+  },
+  "overflow-style:scrollbar": {
+    "prefix": "jovs:s",
+    "body": "overflowStyle: 'scrollbar'"
+  },
+  "overflow-style:panner": {
+    "prefix": "jovs:p",
+    "body": "overflowStyle: 'panner'"
+  },
+  "overflow-style:move": {
+    "prefix": "jovs:m",
+    "body": "overflowStyle: 'move'"
+  },
+  "overflow-style:marquee": {
+    "prefix": "jovs:mq",
+    "body": "overflowStyle: 'marquee'"
+  },
+  "zoom:1": {
+    "prefix": "jzm",
+    "body": "zoom: '1'"
+  },
+  "clip:|": {
+    "prefix": "jcp",
+    "body": "clip: '$0'"
+  },
+  "clip:auto": {
+    "prefix": "jcp:a",
+    "body": "clip: 'auto'"
+  },
+  "clip:rect(${1:top} ${2:right} ${3:bottom} ${4:left})": {
+    "prefix": "jcp:r",
+    "body": "clip: 'rect(${1:top} ${2:right} ${3:bottom} ${4:left})'"
+  },
+  "box-sizing:${1:border-box}": {
+    "prefix": "jbxz",
+    "body": "boxSizing: '${1:border-box}'"
+  },
+  "box-sizing:content-box": {
+    "prefix": "jbxz:cb",
+    "body": "boxSizing: 'content-box'"
+  },
+  "box-sizing:border-box": {
+    "prefix": "jbxz:bb",
+    "body": "boxSizing: 'border-box'"
+  },
+  "box-shadow:${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color}": {
+    "prefix": "jbxsh",
+    "body": "boxShadow: '${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color}'"
+  },
+  "box-shadow:${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:spread }rgb(${6:0}, ${7:0}, ${8:0})": {
+    "prefix": "jbxsh:r",
+    "body": "boxShadow: '${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:spread }rgb(${6:0}, ${7:0}, ${8:0})'"
+  },
+  "box-shadow:${1:inset }${2:h} ${3:v} ${4:blur} ${5:spread }rgba(${6:0}, ${7:0}, ${8:0}, .${9:5})": {
+    "prefix": "jbxsh:ra",
+    "body": "boxShadow: '${1:inset }${2:h} ${3:v} ${4:blur} ${5:spread }rgba(${6:0}, ${7:0}, ${8:0}, .${9:5})'"
+  },
+  "box-shadow:none": {
+    "prefix": "jbxsh:n",
+    "body": "boxShadow: 'none'"
+  },
+  "margin:|": {
+    "prefix": "jm",
+    "body": "margin: '$0'"
+  },
+  "margin:auto": {
+    "prefix": "jm:a",
+    "body": "margin: 'auto'"
+  },
+  "margin-top:|": {
+    "prefix": "jmt",
+    "body": "marginTop: '$0'"
+  },
+  "margin-top:auto": {
+    "prefix": "jmt:a",
+    "body": "marginTop: 'auto'"
+  },
+  "margin-right:|": {
+    "prefix": "jmr",
+    "body": "marginRight: '$0'"
+  },
+  "margin-right:auto": {
+    "prefix": "jmr:a",
+    "body": "marginRight: 'auto'"
+  },
+  "margin-bottom:|": {
+    "prefix": "jmb",
+    "body": "marginBottom: '$0'"
+  },
+  "margin-bottom:auto": {
+    "prefix": "jmb:a",
+    "body": "marginBottom: 'auto'"
+  },
+  "margin-left:|": {
+    "prefix": "jml",
+    "body": "marginLeft: '$0'"
+  },
+  "margin-left:auto": {
+    "prefix": "jml:a",
+    "body": "marginLeft: 'auto'"
+  },
+  "padding:|": {
+    "prefix": "jp",
+    "body": "padding: '$0'"
+  },
+  "padding-top:|": {
+    "prefix": "jpt",
+    "body": "paddingTop: '$0'"
+  },
+  "padding-right:|": {
+    "prefix": "jpr",
+    "body": "paddingRight: '$0'"
+  },
+  "padding-bottom:|": {
+    "prefix": "jpb",
+    "body": "paddingBottom: '$0'"
+  },
+  "padding-left:|": {
+    "prefix": "jpl",
+    "body": "paddingLeft: '$0'"
+  },
+  "width:|": {
+    "prefix": "jw",
+    "body": "width: '$0'"
+  },
+  "width:auto": {
+    "prefix": "jw:a",
+    "body": "width: 'auto'"
+  },
+  "height:|": {
+    "prefix": "jh",
+    "body": "height: '$0'"
+  },
+  "height:auto": {
+    "prefix": "jh:a",
+    "body": "height: 'auto'"
+  },
+  "max-width:|": {
+    "prefix": "jmaw",
+    "body": "maxWidth: '$0'"
+  },
+  "max-width:none": {
+    "prefix": "jmaw:n",
+    "body": "maxWidth: 'none'"
+  },
+  "max-height:|": {
+    "prefix": "jmah",
+    "body": "maxHeight: '$0'"
+  },
+  "max-height:none": {
+    "prefix": "jmah:n",
+    "body": "maxHeight: 'none'"
+  },
+  "min-width:|": {
+    "prefix": "jmiw",
+    "body": "minWidth: '$0'"
+  },
+  "min-height:|": {
+    "prefix": "jmih",
+    "body": "minHeight: '$0'"
+  },
+  "max-resolution:${1:res}": {
+    "prefix": "jmar",
+    "body": "maxResolution: '${1:res}'"
+  },
+  "min-resolution:${1:res}": {
+    "prefix": "jmir",
+    "body": "minResolution: '${1:res}'"
+  },
+  "orientation:|": {
+    "prefix": "jori",
+    "body": "orientation: '$0'"
+  },
+  "orientation:landscape": {
+    "prefix": "jori:l",
+    "body": "orientation: 'landscape'"
+  },
+  "orientation:portrait": {
+    "prefix": "jori:p",
+    "body": "orientation: 'portrait'"
+  },
+  "outline:|": {
+    "prefix": "jol",
+    "body": "outline: '$0'"
+  },
+  "outline:none": {
+    "prefix": "jol:n",
+    "body": "outline: 'none'"
+  },
+  "outline-offset:|": {
+    "prefix": "jolo",
+    "body": "outlineOffset: '$0'"
+  },
+  "outline-width:|": {
+    "prefix": "jolw",
+    "body": "outlineWidth: '$0'"
+  },
+  "outline-width:thin": {
+    "prefix": "jolw:tn",
+    "body": "outlineWidth: 'thin'"
+  },
+  "outline-width:medium": {
+    "prefix": "jolw:m",
+    "body": "outlineWidth: 'medium'"
+  },
+  "outline-width:thick": {
+    "prefix": "jolw:tc",
+    "body": "outlineWidth: 'thick'"
+  },
+  "outline-style:|": {
+    "prefix": "jols",
+    "body": "outlineStyle: '$0'"
+  },
+  "outline-style:none": {
+    "prefix": "jols:n",
+    "body": "outlineStyle: 'none'"
+  },
+  "outline-style:dotted": {
+    "prefix": "jols:dt",
+    "body": "outlineStyle: 'dotted'"
+  },
+  "outline-style:dashed": {
+    "prefix": "jols:ds",
+    "body": "outlineStyle: 'dashed'"
+  },
+  "outline-style:solid": {
+    "prefix": "jols:s",
+    "body": "outlineStyle: 'solid'"
+  },
+  "outline-style:double": {
+    "prefix": "jols:db",
+    "body": "outlineStyle: 'double'"
+  },
+  "outline-style:groove": {
+    "prefix": "jols:g",
+    "body": "outlineStyle: 'groove'"
+  },
+  "outline-style:ridge": {
+    "prefix": "jols:r",
+    "body": "outlineStyle: 'ridge'"
+  },
+  "outline-style:inset": {
+    "prefix": "jols:i",
+    "body": "outlineStyle: 'inset'"
+  },
+  "outline-style:outset": {
+    "prefix": "jols:o",
+    "body": "outlineStyle: 'outset'"
+  },
+  "outline-color:#${1:000}": {
+    "prefix": "jolc",
+    "body": "outlineColor: '#${1:000}'"
+  },
+  "outline-color:invert": {
+    "prefix": "jolc:i",
+    "body": "outlineColor: 'invert'"
+  },
+  "backface-visibility:|": {
+    "prefix": "jbfv",
+    "body": "backfaceVisibility: '$0'"
+  },
+  "backface-visibility:hidden": {
+    "prefix": "jbfv:h",
+    "body": "backfaceVisibility: 'hidden'"
+  },
+  "backface-visibility:visible": {
+    "prefix": "jbfv:v",
+    "body": "backfaceVisibility: 'visible'"
+  },
+  "border:|": {
+    "prefix": "jbd",
+    "body": "border: '$0'"
+  },
+  "border:${1:1px} ${2:solid} ${3:#000}": {
+    "prefix": "jbd+",
+    "body": "border: '${1:1px} ${2:solid} ${3:#000}'"
+  },
+  "border:none": {
+    "prefix": "jbd:n",
+    "body": "border: 'none'"
+  },
+  "border-break:${1:close}": {
+    "prefix": "jbdbk",
+    "body": "borderBreak: '${1:close}'"
+  },
+  "border-break:close": {
+    "prefix": "jbdbk:c",
+    "body": "borderBreak: 'close'"
+  },
+  "border-collapse:|": {
+    "prefix": "jbdcl",
+    "body": "borderCollapse: '$0'"
+  },
+  "border-collapse:collapse": {
+    "prefix": "jbdcl:c",
+    "body": "borderCollapse: 'collapse'"
+  },
+  "border-collapse:separate": {
+    "prefix": "jbdcl:s",
+    "body": "borderCollapse: 'separate'"
+  },
+  "border-color:#${1:000}": {
+    "prefix": "jbdc",
+    "body": "borderColor: '#${1:000}'"
+  },
+  "border-color:transparent": {
+    "prefix": "jbdc:t",
+    "body": "borderColor: 'transparent'"
+  },
+  "border-image:url(|)": {
+    "prefix": "jbdi",
+    "body": "borderImage: 'url($0)'"
+  },
+  "border-image:none": {
+    "prefix": "jbdi:n",
+    "body": "borderImage: 'none'"
+  },
+  "border-top-image:url(|)": {
+    "prefix": "jbdti",
+    "body": "borderTopImage: 'url($0)'"
+  },
+  "border-top-image:none": {
+    "prefix": "jbdti:n",
+    "body": "borderTopImage: 'none'"
+  },
+  "border-right-image:url(|)": {
+    "prefix": "jbdri",
+    "body": "borderRightImage: 'url($0)'"
+  },
+  "border-right-image:none": {
+    "prefix": "jbdri:n",
+    "body": "borderRightImage: 'none'"
+  },
+  "border-bottom-image:url(|)": {
+    "prefix": "jbdbi",
+    "body": "borderBottomImage: 'url($0)'"
+  },
+  "border-bottom-image:none": {
+    "prefix": "jbdbi:n",
+    "body": "borderBottomImage: 'none'"
+  },
+  "border-left-image:url(|)": {
+    "prefix": "jbdli",
+    "body": "borderLeftImage: 'url($0)'"
+  },
+  "border-left-image:none": {
+    "prefix": "jbdli:n",
+    "body": "borderLeftImage: 'none'"
+  },
+  "border-corner-image:url(|)": {
+    "prefix": "jbdci",
+    "body": "borderCornerImage: 'url($0)'"
+  },
+  "border-corner-image:none": {
+    "prefix": "jbdci:n",
+    "body": "borderCornerImage: 'none'"
+  },
+  "border-corner-image:continue": {
+    "prefix": "jbdci:c",
+    "body": "borderCornerImage: 'continue'"
+  },
+  "border-top-left-image:url(|)": {
+    "prefix": "jbdtli",
+    "body": "borderTopLeftImage: 'url($0)'"
+  },
+  "border-top-left-image:none": {
+    "prefix": "jbdtli:n",
+    "body": "borderTopLeftImage: 'none'"
+  },
+  "border-top-left-image:continue": {
+    "prefix": "jbdtli:c",
+    "body": "borderTopLeftImage: 'continue'"
+  },
+  "border-top-right-image:url(|)": {
+    "prefix": "jbdtri",
+    "body": "borderTopRightImage: 'url($0)'"
+  },
+  "border-top-right-image:none": {
+    "prefix": "jbdtri:n",
+    "body": "borderTopRightImage: 'none'"
+  },
+  "border-top-right-image:continue": {
+    "prefix": "jbdtri:c",
+    "body": "borderTopRightImage: 'continue'"
+  },
+  "border-bottom-right-image:url(|)": {
+    "prefix": "jbdbri",
+    "body": "borderBottomRightImage: 'url($0)'"
+  },
+  "border-bottom-right-image:none": {
+    "prefix": "jbdbri:n",
+    "body": "borderBottomRightImage: 'none'"
+  },
+  "border-bottom-right-image:continue": {
+    "prefix": "jbdbri:c",
+    "body": "borderBottomRightImage: 'continue'"
+  },
+  "border-bottom-left-image:url(|)": {
+    "prefix": "jbdbli",
+    "body": "borderBottomLeftImage: 'url($0)'"
+  },
+  "border-bottom-left-image:none": {
+    "prefix": "jbdbli:n",
+    "body": "borderBottomLeftImage: 'none'"
+  },
+  "border-bottom-left-image:continue": {
+    "prefix": "jbdbli:c",
+    "body": "borderBottomLeftImage: 'continue'"
+  },
+  "border-fit:${1:repeat}": {
+    "prefix": "jbdf",
+    "body": "borderFit: '${1:repeat}'"
+  },
+  "border-fit:clip": {
+    "prefix": "jbdf:c",
+    "body": "borderFit: 'clip'"
+  },
+  "border-fit:repeat": {
+    "prefix": "jbdf:r",
+    "body": "borderFit: 'repeat'"
+  },
+  "border-fit:scale": {
+    "prefix": "jbdf:sc",
+    "body": "borderFit: 'scale'"
+  },
+  "border-fit:stretch": {
+    "prefix": "jbdf:st",
+    "body": "borderFit: 'stretch'"
+  },
+  "border-fit:overwrite": {
+    "prefix": "jbdf:ow",
+    "body": "borderFit: 'overwrite'"
+  },
+  "border-fit:overflow": {
+    "prefix": "jbdf:of",
+    "body": "borderFit: 'overflow'"
+  },
+  "border-fit:space": {
+    "prefix": "jbdf:sp",
+    "body": "borderFit: 'space'"
+  },
+  "border-length:|": {
+    "prefix": "jbdlen",
+    "body": "borderLength: '$0'"
+  },
+  "border-length:auto": {
+    "prefix": "jbdlen:a",
+    "body": "borderLength: 'auto'"
+  },
+  "border-spacing:|": {
+    "prefix": "jbdsp",
+    "body": "borderSpacing: '$0'"
+  },
+  "border-style:|": {
+    "prefix": "jbds",
+    "body": "borderStyle: '$0'"
+  },
+  "border-style:none": {
+    "prefix": "jbds:n",
+    "body": "borderStyle: 'none'"
+  },
+  "border-style:hidden": {
+    "prefix": "jbds:h",
+    "body": "borderStyle: 'hidden'"
+  },
+  "border-style:dotted": {
+    "prefix": "jbds:dt",
+    "body": "borderStyle: 'dotted'"
+  },
+  "border-style:dashed": {
+    "prefix": "jbds:ds",
+    "body": "borderStyle: 'dashed'"
+  },
+  "border-style:solid": {
+    "prefix": "jbds:s",
+    "body": "borderStyle: 'solid'"
+  },
+  "border-style:double": {
+    "prefix": "jbds:db",
+    "body": "borderStyle: 'double'"
+  },
+  "border-style:dot-dash": {
+    "prefix": "jbds:dtds",
+    "body": "borderStyle: 'dot-dash'"
+  },
+  "border-style:dot-dot-dash": {
+    "prefix": "jbds:dtdtds",
+    "body": "borderStyle: 'dot-dot-dash'"
+  },
+  "border-style:wave": {
+    "prefix": "jbds:w",
+    "body": "borderStyle: 'wave'"
+  },
+  "border-style:groove": {
+    "prefix": "jbds:g",
+    "body": "borderStyle: 'groove'"
+  },
+  "border-style:ridge": {
+    "prefix": "jbds:r",
+    "body": "borderStyle: 'ridge'"
+  },
+  "border-style:inset": {
+    "prefix": "jbds:i",
+    "body": "borderStyle: 'inset'"
+  },
+  "border-style:outset": {
+    "prefix": "jbds:o",
+    "body": "borderStyle: 'outset'"
+  },
+  "border-width:|": {
+    "prefix": "jbdw",
+    "body": "borderWidth: '$0'"
+  },
+  "border-top-width:|": {
+    "prefix": "jbdtw",
+    "body": "borderTopWidth: '$0'"
+  },
+  "border-right-width:|": {
+    "prefix": "jbdrw",
+    "body": "borderRightWidth: '$0'"
+  },
+  "border-bottom-width:|": {
+    "prefix": "jbdbw",
+    "body": "borderBottomWidth: '$0'"
+  },
+  "border-left-width:|": {
+    "prefix": "jbdlw",
+    "body": "borderLeftWidth: '$0'"
+  },
+  "border-top:|": {
+    "prefix": "jbt",
+    "body": "borderTop: '$0'"
+  },
+  "border-top:${1:1px} ${2:solid} ${3:#000}": {
+    "prefix": "jbdt+",
+    "body": "borderTop: '${1:1px} ${2:solid} ${3:#000}'"
+  },
+  "border-top:none": {
+    "prefix": "jbdt:n",
+    "body": "borderTop: 'none'"
+  },
+  "border-top-style:|": {
+    "prefix": "jbdts",
+    "body": "borderTopStyle: '$0'"
+  },
+  "border-top-style:none": {
+    "prefix": "jbdts:n",
+    "body": "borderTopStyle: 'none'"
+  },
+  "border-top-color:#${1:000}": {
+    "prefix": "jbdtc",
+    "body": "borderTopColor: '#${1:000}'"
+  },
+  "border-top-color:transparent": {
+    "prefix": "jbdtc:t",
+    "body": "borderTopColor: 'transparent'"
+  },
+  "border-right:|": {
+    "prefix": "jbr",
+    "body": "borderRight: '$0'"
+  },
+  "border-right:${1:1px} ${2:solid} ${3:#000}": {
+    "prefix": "jbdr+",
+    "body": "borderRight: '${1:1px} ${2:solid} ${3:#000}'"
+  },
+  "border-right:none": {
+    "prefix": "jbdr:n",
+    "body": "borderRight: 'none'"
+  },
+  "border-right-style:|": {
+    "prefix": "jbdrst",
+    "body": "borderRightStyle: '$0'"
+  },
+  "border-right-style:none": {
+    "prefix": "jbdrst:n",
+    "body": "borderRightStyle: 'none'"
+  },
+  "border-right-color:#${1:000}": {
+    "prefix": "jbdrc",
+    "body": "borderRightColor: '#${1:000}'"
+  },
+  "border-right-color:transparent": {
+    "prefix": "jbdrc:t",
+    "body": "borderRightColor: 'transparent'"
+  },
+  "border-bottom:|": {
+    "prefix": "jbb",
+    "body": "borderBottom: '$0'"
+  },
+  "border-bottom:${1:1px} ${2:solid} ${3:#000}": {
+    "prefix": "jbdb+",
+    "body": "borderBottom: '${1:1px} ${2:solid} ${3:#000}'"
+  },
+  "border-bottom:none": {
+    "prefix": "jbdb:n",
+    "body": "borderBottom: 'none'"
+  },
+  "border-bottom-style:|": {
+    "prefix": "jbdbs",
+    "body": "borderBottomStyle: '$0'"
+  },
+  "border-bottom-style:none": {
+    "prefix": "jbdbs:n",
+    "body": "borderBottomStyle: 'none'"
+  },
+  "border-bottom-color:#${1:000}": {
+    "prefix": "jbdbc",
+    "body": "borderBottomColor: '#${1:000}'"
+  },
+  "border-bottom-color:transparent": {
+    "prefix": "jbdbc:t",
+    "body": "borderBottomColor: 'transparent'"
+  },
+  "border-left:|": {
+    "prefix": "jbl",
+    "body": "borderLeft: '$0'"
+  },
+  "border-left:${1:1px} ${2:solid} ${3:#000}": {
+    "prefix": "jbdl+",
+    "body": "borderLeft: '${1:1px} ${2:solid} ${3:#000}'"
+  },
+  "border-left:none": {
+    "prefix": "jbdl:n",
+    "body": "borderLeft: 'none'"
+  },
+  "border-left-style:|": {
+    "prefix": "jbdls",
+    "body": "borderLeftStyle: '$0'"
+  },
+  "border-left-style:none": {
+    "prefix": "jbdls:n",
+    "body": "borderLeftStyle: 'none'"
+  },
+  "border-left-color:#${1:000}": {
+    "prefix": "jbdlc",
+    "body": "borderLeftColor: '#${1:000}'"
+  },
+  "border-left-color:transparent": {
+    "prefix": "jbdlc:t",
+    "body": "borderLeftColor: 'transparent'"
+  },
+  "border-radius:|": {
+    "prefix": "jbdrs",
+    "body": "borderRadius: '$0'"
+  },
+  "border-top-right-radius:|": {
+    "prefix": "jbdtrrs",
+    "body": "borderTopRightRadius: '$0'"
+  },
+  "border-top-left-radius:|": {
+    "prefix": "jbdtlrs",
+    "body": "borderTopLeftRadius: '$0'"
+  },
+  "border-bottom-right-radius:|": {
+    "prefix": "jbdbrrs",
+    "body": "borderBottomRightRadius: '$0'"
+  },
+  "border-bottom-left-radius:|": {
+    "prefix": "jbdblrs",
+    "body": "borderBottomLeftRadius: '$0'"
+  },
+  "background:#${1:000}": {
+    "prefix": "jbg",
+    "body": "background: '#${1:000}'"
+  },
+  "background:${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat}": {
+    "prefix": "jbg+",
+    "body": "background: '${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat}'"
+  },
+  "background:none": {
+    "prefix": "jbg:n",
+    "body": "background: 'none'"
+  },
+  "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:x}.png',sizingMethod='${2:crop}')": {
+    "prefix": "jbg:ie",
+    "body": "filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\\'${1:x}.png\\',sizingMethod=\\'${2:crop}\\')'"
+  },
+  "background-color:#${1:fff}": {
+    "prefix": "jbgc",
+    "body": "backgroundColor: '#${1:fff}'"
+  },
+  "background-color:transparent": {
+    "prefix": "jbgc:t",
+    "body": "backgroundColor: 'transparent'"
+  },
+  "background-image:url(|)": {
+    "prefix": "jbgi",
+    "body": "backgroundImage: 'url($0)'"
+  },
+  "background-image:none": {
+    "prefix": "jbgi:n",
+    "body": "backgroundImage: 'none'"
+  },
+  "background-repeat:|": {
+    "prefix": "jbgr",
+    "body": "backgroundRepeat: '$0'"
+  },
+  "background-repeat:no-repeat": {
+    "prefix": "jbgr:n",
+    "body": "backgroundRepeat: 'no-repeat'"
+  },
+  "background-repeat:repeat-x": {
+    "prefix": "jbgr:x",
+    "body": "backgroundRepeat: 'repeat-x'"
+  },
+  "background-repeat:repeat-y": {
+    "prefix": "jbgr:y",
+    "body": "backgroundRepeat: 'repeat-y'"
+  },
+  "background-repeat:space": {
+    "prefix": "jbgr:sp",
+    "body": "backgroundRepeat: 'space'"
+  },
+  "background-repeat:round": {
+    "prefix": "jbgr:rd",
+    "body": "backgroundRepeat: 'round'"
+  },
+  "background-attachment:|": {
+    "prefix": "jbga",
+    "body": "backgroundAttachment: '$0'"
+  },
+  "background-attachment:fixed": {
+    "prefix": "jbga:f",
+    "body": "backgroundAttachment: 'fixed'"
+  },
+  "background-attachment:scroll": {
+    "prefix": "jbga:s",
+    "body": "backgroundAttachment: 'scroll'"
+  },
+  "background-position:${1:0} ${2:0}": {
+    "prefix": "jbgp",
+    "body": "backgroundPosition: '${1:0} ${2:0}'"
+  },
+  "background-position-x:|": {
+    "prefix": "jbgpx",
+    "body": "backgroundPositionX: '$0'"
+  },
+  "background-position-y:|": {
+    "prefix": "jbgpy",
+    "body": "backgroundPositionY: '$0'"
+  },
+  "background-break:|": {
+    "prefix": "jbgbk",
+    "body": "backgroundBreak: '$0'"
+  },
+  "background-break:bounding-box": {
+    "prefix": "jbgbk:bb",
+    "body": "backgroundBreak: 'bounding-box'"
+  },
+  "background-break:each-box": {
+    "prefix": "jbgbk:eb",
+    "body": "backgroundBreak: 'each-box'"
+  },
+  "background-break:continuous": {
+    "prefix": "jbgbk:c",
+    "body": "backgroundBreak: 'continuous'"
+  },
+  "background-clip:${1:padding-box}": {
+    "prefix": "jbgcp",
+    "body": "backgroundClip: '${1:padding-box}'"
+  },
+  "background-clip:border-box": {
+    "prefix": "jbgcp:bb",
+    "body": "backgroundClip: 'border-box'"
+  },
+  "background-clip:padding-box": {
+    "prefix": "jbgcp:pb",
+    "body": "backgroundClip: 'padding-box'"
+  },
+  "background-clip:content-box": {
+    "prefix": "jbgcp:cb",
+    "body": "backgroundClip: 'content-box'"
+  },
+  "background-clip:no-clip": {
+    "prefix": "jbgcp:nc",
+    "body": "backgroundClip: 'no-clip'"
+  },
+  "background-origin:|": {
+    "prefix": "jbgo",
+    "body": "backgroundOrigin: '$0'"
+  },
+  "background-origin:padding-box": {
+    "prefix": "jbgo:pb",
+    "body": "backgroundOrigin: 'padding-box'"
+  },
+  "background-origin:border-box": {
+    "prefix": "jbgo:bb",
+    "body": "backgroundOrigin: 'border-box'"
+  },
+  "background-origin:content-box": {
+    "prefix": "jbgo:cb",
+    "body": "backgroundOrigin: 'content-box'"
+  },
+  "background-size:|": {
+    "prefix": "jbgsz",
+    "body": "backgroundSize: '$0'"
+  },
+  "background-size:auto": {
+    "prefix": "jbgsz:a",
+    "body": "backgroundSize: 'auto'"
+  },
+  "background-size:contain": {
+    "prefix": "jbgsz:ct",
+    "body": "backgroundSize: 'contain'"
+  },
+  "background-size:cover": {
+    "prefix": "jbgsz:cv",
+    "body": "backgroundSize: 'cover'"
+  },
+  "color:#${1:000}": {
+    "prefix": "jc",
+    "body": "color: '#${1:000}'"
+  },
+  "color:rgb(${1:0}, ${2:0}, ${3:0})": {
+    "prefix": "jc:r",
+    "body": "color: 'rgb(${1:0}, ${2:0}, ${3:0})'"
+  },
+  "color:rgba(${1:0}, ${2:0}, ${3:0}, .${4:5})": {
+    "prefix": "jc:ra",
+    "body": "color: 'rgba(${1:0}, ${2:0}, ${3:0}, .${4:5})'"
+  },
+  "/* |${child} */": {
+    "prefix": "jcm",
+    "body": "/* $0${child} */"
+  },
+  "content:'|'": {
+    "prefix": "jcnt",
+    "body": "content: '\\'$0\\''"
+  },
+  "content:normal": {
+    "prefix": "jct:n",
+    "body": "content: 'normal'"
+  },
+  "content:open-quote": {
+    "prefix": "jct:oq",
+    "body": "content: 'open-quote'"
+  },
+  "content:no-open-quote": {
+    "prefix": "jct:noq",
+    "body": "content: 'no-open-quote'"
+  },
+  "content:close-quote": {
+    "prefix": "jct:cq",
+    "body": "content: 'close-quote'"
+  },
+  "content:no-close-quote": {
+    "prefix": "jct:ncq",
+    "body": "content: 'no-close-quote'"
+  },
+  "content:attr(|)": {
+    "prefix": "jct:a",
+    "body": "content: 'attr($0)'"
+  },
+  "content:counter(|)": {
+    "prefix": "jct:c",
+    "body": "content: 'counter($0)'"
+  },
+  "content:counters(|)": {
+    "prefix": "jct:cs",
+    "body": "content: 'counters($0)'"
+  },
+  "table-layout:|": {
+    "prefix": "jtbl",
+    "body": "tableLayout: '$0'"
+  },
+  "table-layout:auto": {
+    "prefix": "jtbl:a",
+    "body": "tableLayout: 'auto'"
+  },
+  "table-layout:fixed": {
+    "prefix": "jtbl:f",
+    "body": "tableLayout: 'fixed'"
+  },
+  "caption-side:|": {
+    "prefix": "jcps",
+    "body": "captionSide: '$0'"
+  },
+  "caption-side:top": {
+    "prefix": "jcps:t",
+    "body": "captionSide: 'top'"
+  },
+  "caption-side:bottom": {
+    "prefix": "jcps:b",
+    "body": "captionSide: 'bottom'"
+  },
+  "empty-cells:|": {
+    "prefix": "jec",
+    "body": "emptyCells: '$0'"
+  },
+  "empty-cells:show": {
+    "prefix": "jec:s",
+    "body": "emptyCells: 'show'"
+  },
+  "empty-cells:hide": {
+    "prefix": "jec:h",
+    "body": "emptyCells: 'hide'"
+  },
+  "list-style:|": {
+    "prefix": "jlis",
+    "body": "listStyle: '$0'"
+  },
+  "list-style:none": {
+    "prefix": "jlis:n",
+    "body": "listStyle: 'none'"
+  },
+  "list-style-position:|": {
+    "prefix": "jlisp",
+    "body": "listStylePosition: '$0'"
+  },
+  "list-style-position:inside": {
+    "prefix": "jlisp:i",
+    "body": "listStylePosition: 'inside'"
+  },
+  "list-style-position:outside": {
+    "prefix": "jlisp:o",
+    "body": "listStylePosition: 'outside'"
+  },
+  "list-style-type:|": {
+    "prefix": "jlist",
+    "body": "listStyleType: '$0'"
+  },
+  "list-style-type:none": {
+    "prefix": "jlist:n",
+    "body": "listStyleType: 'none'"
+  },
+  "list-style-type:disc": {
+    "prefix": "jlist:d",
+    "body": "listStyleType: 'disc'"
+  },
+  "list-style-type:circle": {
+    "prefix": "jlist:c",
+    "body": "listStyleType: 'circle'"
+  },
+  "list-style-type:square": {
+    "prefix": "jlist:s",
+    "body": "listStyleType: 'square'"
+  },
+  "list-style-type:decimal": {
+    "prefix": "jlist:dc",
+    "body": "listStyleType: 'decimal'"
+  },
+  "list-style-type:decimal-leading-zero": {
+    "prefix": "jlist:dclz",
+    "body": "listStyleType: 'decimal-leading-zero'"
+  },
+  "list-style-type:lower-roman": {
+    "prefix": "jlist:lr",
+    "body": "listStyleType: 'lower-roman'"
+  },
+  "list-style-type:upper-roman": {
+    "prefix": "jlist:ur",
+    "body": "listStyleType: 'upper-roman'"
+  },
+  "list-style-image:|": {
+    "prefix": "jlisi",
+    "body": "listStyleImage: '$0'"
+  },
+  "list-style-image:none": {
+    "prefix": "jlisi:n",
+    "body": "listStyleImage: 'none'"
+  },
+  "quotes:|": {
+    "prefix": "jq",
+    "body": "quotes: '$0'"
+  },
+  "quotes:none": {
+    "prefix": "jq:n",
+    "body": "quotes: 'none'"
+  },
+  "quotes:'\\00AB' '\\00BB' '\\201E' '\\201C'": {
+    "prefix": "jq:ru",
+    "body": "quotes: '\\'\\00AB\\' \\'\\00BB\\' \\'\\201E\\' \\'\\201C\\''"
+  },
+  "quotes:'\\201C' '\\201D' '\\2018' '\\2019'": {
+    "prefix": "jq:en",
+    "body": "quotes: '\\'\\201C\\' \\'\\201D\\' \\'\\2018\\' \\'\\2019\\''"
+  },
+  "content:|": {
+    "prefix": "jct",
+    "body": "content: '$0'"
+  },
+  "counter-increment:|": {
+    "prefix": "jcoi",
+    "body": "counterIncrement: '$0'"
+  },
+  "counter-reset:|": {
+    "prefix": "jcor",
+    "body": "counterReset: '$0'"
+  },
+  "vertical-align:${1:top}": {
+    "prefix": "jva",
+    "body": "verticalAlign: '${1:top}'"
+  },
+  "vertical-align:super": {
+    "prefix": "jva:sup",
+    "body": "verticalAlign: 'super'"
+  },
+  "vertical-align:top": {
+    "prefix": "jva:t",
+    "body": "verticalAlign: 'top'"
+  },
+  "vertical-align:text-top": {
+    "prefix": "jva:tt",
+    "body": "verticalAlign: 'text-top'"
+  },
+  "vertical-align:middle": {
+    "prefix": "jva:m",
+    "body": "verticalAlign: 'middle'"
+  },
+  "vertical-align:baseline": {
+    "prefix": "jva:bl",
+    "body": "verticalAlign: 'baseline'"
+  },
+  "vertical-align:bottom": {
+    "prefix": "jva:b",
+    "body": "verticalAlign: 'bottom'"
+  },
+  "vertical-align:text-bottom": {
+    "prefix": "jva:tb",
+    "body": "verticalAlign: 'text-bottom'"
+  },
+  "vertical-align:sub": {
+    "prefix": "jva:sub",
+    "body": "verticalAlign: 'sub'"
+  },
+  "text-align:${1:left}": {
+    "prefix": "jta",
+    "body": "textAlign: '${1:left}'"
+  },
+  "text-align:left": {
+    "prefix": "jta:l",
+    "body": "textAlign: 'left'"
+  },
+  "text-align:center": {
+    "prefix": "jta:c",
+    "body": "textAlign: 'center'"
+  },
+  "text-align:right": {
+    "prefix": "jta:r",
+    "body": "textAlign: 'right'"
+  },
+  "text-align:justify": {
+    "prefix": "jta:j",
+    "body": "textAlign: 'justify'"
+  },
+  "text-align-last:|": {
+    "prefix": "jta-lst",
+    "body": "textAlignLast: '$0'"
+  },
+  "text-align-last:auto": {
+    "prefix": "jtal:a",
+    "body": "textAlignLast: 'auto'"
+  },
+  "text-align-last:left": {
+    "prefix": "jtal:l",
+    "body": "textAlignLast: 'left'"
+  },
+  "text-align-last:center": {
+    "prefix": "jtal:c",
+    "body": "textAlignLast: 'center'"
+  },
+  "text-align-last:right": {
+    "prefix": "jtal:r",
+    "body": "textAlignLast: 'right'"
+  },
+  "text-decoration:${1:none}": {
+    "prefix": "jtd",
+    "body": "textDecoration: '${1:none}'"
+  },
+  "text-decoration:none": {
+    "prefix": "jtd:n",
+    "body": "textDecoration: 'none'"
+  },
+  "text-decoration:underline": {
+    "prefix": "jtd:u",
+    "body": "textDecoration: 'underline'"
+  },
+  "text-decoration:overline": {
+    "prefix": "jtd:o",
+    "body": "textDecoration: 'overline'"
+  },
+  "text-decoration:line-through": {
+    "prefix": "jtd:l",
+    "body": "textDecoration: 'line-through'"
+  },
+  "text-emphasis:|": {
+    "prefix": "jte",
+    "body": "textEmphasis: '$0'"
+  },
+  "text-emphasis:none": {
+    "prefix": "jte:n",
+    "body": "textEmphasis: 'none'"
+  },
+  "text-emphasis:accent": {
+    "prefix": "jte:ac",
+    "body": "textEmphasis: 'accent'"
+  },
+  "text-emphasis:dot": {
+    "prefix": "jte:dt",
+    "body": "textEmphasis: 'dot'"
+  },
+  "text-emphasis:circle": {
+    "prefix": "jte:c",
+    "body": "textEmphasis: 'circle'"
+  },
+  "text-emphasis:disc": {
+    "prefix": "jte:ds",
+    "body": "textEmphasis: 'disc'"
+  },
+  "text-emphasis:before": {
+    "prefix": "jte:b",
+    "body": "textEmphasis: 'before'"
+  },
+  "text-emphasis:after": {
+    "prefix": "jte:a",
+    "body": "textEmphasis: 'after'"
+  },
+  "text-height:|": {
+    "prefix": "jth",
+    "body": "textHeight: '$0'"
+  },
+  "text-height:auto": {
+    "prefix": "jth:a",
+    "body": "textHeight: 'auto'"
+  },
+  "text-height:font-size": {
+    "prefix": "jth:f",
+    "body": "textHeight: 'font-size'"
+  },
+  "text-height:text-size": {
+    "prefix": "jth:t",
+    "body": "textHeight: 'text-size'"
+  },
+  "text-height:max-size": {
+    "prefix": "jth:m",
+    "body": "textHeight: 'max-size'"
+  },
+  "text-indent:|": {
+    "prefix": "jti",
+    "body": "textIndent: '$0'"
+  },
+  "text-indent:-9999px": {
+    "prefix": "jti:-",
+    "body": "textIndent: '-9999px'"
+  },
+  "text-justify:|": {
+    "prefix": "jtj",
+    "body": "textJustify: '$0'"
+  },
+  "text-justify:auto": {
+    "prefix": "jtj:a",
+    "body": "textJustify: 'auto'"
+  },
+  "text-justify:inter-word": {
+    "prefix": "jtj:iw",
+    "body": "textJustify: 'inter-word'"
+  },
+  "text-justify:inter-ideograph": {
+    "prefix": "jtj:ii",
+    "body": "textJustify: 'inter-ideograph'"
+  },
+  "text-justify:inter-cluster": {
+    "prefix": "jtj:ic",
+    "body": "textJustify: 'inter-cluster'"
+  },
+  "text-justify:distribute": {
+    "prefix": "jtj:d",
+    "body": "textJustify: 'distribute'"
+  },
+  "text-justify:kashida": {
+    "prefix": "jtj:k",
+    "body": "textJustify: 'kashida'"
+  },
+  "text-justify:tibetan": {
+    "prefix": "jtj:t",
+    "body": "textJustify: 'tibetan'"
+  },
+  "text-overflow:${ellipsis}": {
+    "prefix": "jtov",
+    "body": "textOverflow: '${ellipsis}'"
+  },
+  "text-overflow:ellipsis": {
+    "prefix": "jtov:e",
+    "body": "textOverflow: 'ellipsis'"
+  },
+  "text-overflow:clip": {
+    "prefix": "jtov:c",
+    "body": "textOverflow: 'clip'"
+  },
+  "text-outline:|": {
+    "prefix": "jto",
+    "body": "textOutline: '$0'"
+  },
+  "text-outline:${1:0} ${2:0} ${3:#000}": {
+    "prefix": "jto+",
+    "body": "textOutline: '${1:0} ${2:0} ${3:#000}'"
+  },
+  "text-outline:none": {
+    "prefix": "jto:n",
+    "body": "textOutline: 'none'"
+  },
+  "text-replace:|": {
+    "prefix": "jtr",
+    "body": "textReplace: '$0'"
+  },
+  "text-replace:none": {
+    "prefix": "jtr:n",
+    "body": "textReplace: 'none'"
+  },
+  "text-transform:${1:uppercase}": {
+    "prefix": "jtt",
+    "body": "textTransform: '${1:uppercase}'"
+  },
+  "text-transform:none": {
+    "prefix": "jtt:n",
+    "body": "textTransform: 'none'"
+  },
+  "text-transform:capitalize": {
+    "prefix": "jtt:c",
+    "body": "textTransform: 'capitalize'"
+  },
+  "text-transform:uppercase": {
+    "prefix": "jtt:u",
+    "body": "textTransform: 'uppercase'"
+  },
+  "text-transform:lowercase": {
+    "prefix": "jtt:l",
+    "body": "textTransform: 'lowercase'"
+  },
+  "text-wrap:|": {
+    "prefix": "jtw",
+    "body": "textWrap: '$0'"
+  },
+  "text-wrap:normal": {
+    "prefix": "jtw:n",
+    "body": "textWrap: 'normal'"
+  },
+  "text-wrap:none": {
+    "prefix": "jtw:no",
+    "body": "textWrap: 'none'"
+  },
+  "text-wrap:unrestricted": {
+    "prefix": "jtw:u",
+    "body": "textWrap: 'unrestricted'"
+  },
+  "text-wrap:suppress": {
+    "prefix": "jtw:s",
+    "body": "textWrap: 'suppress'"
+  },
+  "text-shadow:${1:hoff} ${2:voff} ${3:blur} ${4:#000}": {
+    "prefix": "jtsh",
+    "body": "textShadow: '${1:hoff} ${2:voff} ${3:blur} ${4:#000}'"
+  },
+  "text-shadow:${1:h} ${2:v} ${3:blur} rgb(${4:0}, ${5:0}, ${6:0})": {
+    "prefix": "jtsh:r",
+    "body": "textShadow: '${1:h} ${2:v} ${3:blur} rgb(${4:0}, ${5:0}, ${6:0})'"
+  },
+  "text-shadow:${1:h} ${2:v} ${3:blur} rgba(${4:0}, ${5:0}, ${6:0}, .${7:5})": {
+    "prefix": "jtsh:ra",
+    "body": "textShadow: '${1:h} ${2:v} ${3:blur} rgba(${4:0}, ${5:0}, ${6:0}, .${7:5})'"
+  },
+  "text-shadow:${1:0} ${2:0} ${3:0} ${4:#000}": {
+    "prefix": "jtsh+",
+    "body": "textShadow: '${1:0} ${2:0} ${3:0} ${4:#000}'"
+  },
+  "text-shadow:none": {
+    "prefix": "jtsh:n",
+    "body": "textShadow: 'none'"
+  },
+  "transform:|": {
+    "prefix": "jtrf",
+    "body": "transform: '$0'"
+  },
+  "transform: skewX(${1:angle})": {
+    "prefix": "jtrf:skx",
+    "body": "transform: ' skewX(${1:angle})'"
+  },
+  "transform: skewY(${1:angle})": {
+    "prefix": "jtrf:sky",
+    "body": "transform: ' skewY(${1:angle})'"
+  },
+  "transform: scale(${1:x}, ${2:y})": {
+    "prefix": "jtrf:sc",
+    "body": "transform: ' scale(${1:x}, ${2:y})'"
+  },
+  "transform: scaleX(${1:x})": {
+    "prefix": "jtrf:scx",
+    "body": "transform: ' scaleX(${1:x})'"
+  },
+  "transform: scaleY(${1:y})": {
+    "prefix": "jtrf:scy",
+    "body": "transform: ' scaleY(${1:y})'"
+  },
+  "transform: scaleZ(${1:z})": {
+    "prefix": "jtrf:scz",
+    "body": "transform: ' scaleZ(${1:z})'"
+  },
+  "transform: scale3d(${1:x}, ${2:y}, ${3:z})": {
+    "prefix": "jtrf:sc3",
+    "body": "transform: ' scale3d(${1:x}, ${2:y}, ${3:z})'"
+  },
+  "transform: rotate(${1:angle})": {
+    "prefix": "jtrf:r",
+    "body": "transform: ' rotate(${1:angle})'"
+  },
+  "transform: rotateX(${1:angle})": {
+    "prefix": "jtrf:rx",
+    "body": "transform: ' rotateX(${1:angle})'"
+  },
+  "transform: rotateY(${1:angle})": {
+    "prefix": "jtrf:ry",
+    "body": "transform: ' rotateY(${1:angle})'"
+  },
+  "transform: rotateZ(${1:angle})": {
+    "prefix": "jtrf:rz",
+    "body": "transform: ' rotateZ(${1:angle})'"
+  },
+  "transform: translate(${1:x}, ${2:y})": {
+    "prefix": "jtrf:t",
+    "body": "transform: ' translate(${1:x}, ${2:y})'"
+  },
+  "transform: translateX(${1:x})": {
+    "prefix": "jtrf:tx",
+    "body": "transform: ' translateX(${1:x})'"
+  },
+  "transform: translateY(${1:y})": {
+    "prefix": "jtrf:ty",
+    "body": "transform: ' translateY(${1:y})'"
+  },
+  "transform: translateZ(${1:z})": {
+    "prefix": "jtrf:tz",
+    "body": "transform: ' translateZ(${1:z})'"
+  },
+  "transform: translate3d(${1:tx}, ${2:ty}, ${3:tz})": {
+    "prefix": "jtrf:t3",
+    "body": "transform: ' translate3d(${1:tx}, ${2:ty}, ${3:tz})'"
+  },
+  "transform-origin:|": {
+    "prefix": "jtrfo",
+    "body": "transformOrigin: '$0'"
+  },
+  "transform-style:${1:preserve-3d}": {
+    "prefix": "jtrfs",
+    "body": "transformStyle: '${1:preserve-3d}'"
+  },
+  "transition:${1:prop} ${2:time}": {
+    "prefix": "jtrs",
+    "body": "transition: '${1:prop} ${2:time}'"
+  },
+  "transition-delay:${1:time}": {
+    "prefix": "jtrsde",
+    "body": "transitionDelay: '${1:time}'"
+  },
+  "transition-duration:${1:time}": {
+    "prefix": "jtrsdu",
+    "body": "transitionDuration: '${1:time}'"
+  },
+  "transition-property:${1:prop}": {
+    "prefix": "jtrsp",
+    "body": "transitionProperty: '${1:prop}'"
+  },
+  "transition-timing-function:${1:tfunc}": {
+    "prefix": "jtrstf",
+    "body": "transitionTimingFunction: '${1:tfunc}'"
+  },
+  "line-height:|": {
+    "prefix": "jlh",
+    "body": "lineHeight: '$0'"
+  },
+  "white-space:|": {
+    "prefix": "jwhs",
+    "body": "whiteSpace: '$0'"
+  },
+  "white-space:normal": {
+    "prefix": "jwhs:n",
+    "body": "whiteSpace: 'normal'"
+  },
+  "white-space:pre": {
+    "prefix": "jwhs:p",
+    "body": "whiteSpace: 'pre'"
+  },
+  "white-space:nowrap": {
+    "prefix": "jwhs:nw",
+    "body": "whiteSpace: 'nowrap'"
+  },
+  "white-space:pre-wrap": {
+    "prefix": "jwhs:pw",
+    "body": "whiteSpace: 'pre-wrap'"
+  },
+  "white-space:pre-line": {
+    "prefix": "jwhs:pl",
+    "body": "whiteSpace: 'pre-line'"
+  },
+  "white-space-collapse:|": {
+    "prefix": "jwhsc",
+    "body": "whiteSpaceCollapse: '$0'"
+  },
+  "white-space-collapse:normal": {
+    "prefix": "jwhsc:n",
+    "body": "whiteSpaceCollapse: 'normal'"
+  },
+  "white-space-collapse:keep-all": {
+    "prefix": "jwhsc:k",
+    "body": "whiteSpaceCollapse: 'keep-all'"
+  },
+  "white-space-collapse:loose": {
+    "prefix": "jwhsc:l",
+    "body": "whiteSpaceCollapse: 'loose'"
+  },
+  "white-space-collapse:break-strict": {
+    "prefix": "jwhsc:bs",
+    "body": "whiteSpaceCollapse: 'break-strict'"
+  },
+  "white-space-collapse:break-all": {
+    "prefix": "jwhsc:ba",
+    "body": "whiteSpaceCollapse: 'break-all'"
+  },
+  "word-break:|": {
+    "prefix": "jwob",
+    "body": "wordBreak: '$0'"
+  },
+  "word-break:normal": {
+    "prefix": "jwob:n",
+    "body": "wordBreak: 'normal'"
+  },
+  "word-break:keep-all": {
+    "prefix": "jwob:k",
+    "body": "wordBreak: 'keep-all'"
+  },
+  "word-break:break-all": {
+    "prefix": "jwob:ba",
+    "body": "wordBreak: 'break-all'"
+  },
+  "word-spacing:|": {
+    "prefix": "jwos",
+    "body": "wordSpacing: '$0'"
+  },
+  "word-wrap:|": {
+    "prefix": "jwow",
+    "body": "wordWrap: '$0'"
+  },
+  "word-wrap:normal": {
+    "prefix": "jwow:nm",
+    "body": "wordWrap: 'normal'"
+  },
+  "word-wrap:none": {
+    "prefix": "jwow:n",
+    "body": "wordWrap: 'none'"
+  },
+  "word-wrap:unrestricted": {
+    "prefix": "jwow:u",
+    "body": "wordWrap: 'unrestricted'"
+  },
+  "word-wrap:suppress": {
+    "prefix": "jwow:s",
+    "body": "wordWrap: 'suppress'"
+  },
+  "word-wrap:break-word": {
+    "prefix": "jwow:b",
+    "body": "wordWrap: 'break-word'"
+  },
+  "writing-mode:${1:lr-tb}": {
+    "prefix": "jwm",
+    "body": "writingMode: '${1:lr-tb}'"
+  },
+  "writing-mode:lr-tb": {
+    "prefix": "jwm:lrt",
+    "body": "writingMode: 'lr-tb'"
+  },
+  "writing-mode:lr-bt": {
+    "prefix": "jwm:lrb",
+    "body": "writingMode: 'lr-bt'"
+  },
+  "writing-mode:rl-tb": {
+    "prefix": "jwm:rlt",
+    "body": "writingMode: 'rl-tb'"
+  },
+  "writing-mode:rl-bt": {
+    "prefix": "jwm:rlb",
+    "body": "writingMode: 'rl-bt'"
+  },
+  "writing-mode:tb-rl": {
+    "prefix": "jwm:tbr",
+    "body": "writingMode: 'tb-rl'"
+  },
+  "writing-mode:tb-lr": {
+    "prefix": "jwm:tbl",
+    "body": "writingMode: 'tb-lr'"
+  },
+  "writing-mode:bt-lr": {
+    "prefix": "jwm:btl",
+    "body": "writingMode: 'bt-lr'"
+  },
+  "writing-mode:bt-rl": {
+    "prefix": "jwm:btr",
+    "body": "writingMode: 'bt-rl'"
+  },
+  "letter-spacing:|": {
+    "prefix": "jlts",
+    "body": "letterSpacing: '$0'"
+  },
+  "letter-spacing:normal": {
+    "prefix": "jlts-n",
+    "body": "letterSpacing: 'normal'"
+  },
+  "font:|": {
+    "prefix": "jf",
+    "body": "font: '$0'"
+  },
+  "font:${1:1em} ${2:Arial,sans-serif}": {
+    "prefix": "jf+",
+    "body": "font: '${1:1em} ${2:Arial,sans-serif}'"
+  },
+  "font-weight:|": {
+    "prefix": "jfw",
+    "body": "fontWeight: '$0'"
+  },
+  "font-weight:normal": {
+    "prefix": "jfw:n",
+    "body": "fontWeight: 'normal'"
+  },
+  "font-weight:bold": {
+    "prefix": "jfw:b",
+    "body": "fontWeight: 'bold'"
+  },
+  "font-weight:bolder": {
+    "prefix": "jfw:br",
+    "body": "fontWeight: 'bolder'"
+  },
+  "font-weight:lighter": {
+    "prefix": "jfw:lr",
+    "body": "fontWeight: 'lighter'"
+  },
+  "font-style:${italic}": {
+    "prefix": "jfs",
+    "body": "fontStyle: '${italic}'"
+  },
+  "font-style:normal": {
+    "prefix": "jfs:n",
+    "body": "fontStyle: 'normal'"
+  },
+  "font-style:italic": {
+    "prefix": "jfs:i",
+    "body": "fontStyle: 'italic'"
+  },
+  "font-style:oblique": {
+    "prefix": "jfs:o",
+    "body": "fontStyle: 'oblique'"
+  },
+  "font-variant:|": {
+    "prefix": "jfv",
+    "body": "fontVariant: '$0'"
+  },
+  "font-variant:normal": {
+    "prefix": "jfv:n",
+    "body": "fontVariant: 'normal'"
+  },
+  "font-variant:small-caps": {
+    "prefix": "jfv:sc",
+    "body": "fontVariant: 'small-caps'"
+  },
+  "font-size:|": {
+    "prefix": "jfz",
+    "body": "fontSize: '$0'"
+  },
+  "font-size-adjust:|": {
+    "prefix": "jfza",
+    "body": "fontSizeAdjust: '$0'"
+  },
+  "font-size-adjust:none": {
+    "prefix": "jfza:n",
+    "body": "fontSizeAdjust: 'none'"
+  },
+  "font-family:|": {
+    "prefix": "jff",
+    "body": "fontFamily: '$0'"
+  },
+  "font-family:serif": {
+    "prefix": "jff:s",
+    "body": "fontFamily: 'serif'"
+  },
+  "font-family:sans-serif": {
+    "prefix": "jff:ss",
+    "body": "fontFamily: 'sans-serif'"
+  },
+  "font-family:cursive": {
+    "prefix": "jff:c",
+    "body": "fontFamily: 'cursive'"
+  },
+  "font-family:fantasy": {
+    "prefix": "jff:f",
+    "body": "fontFamily: 'fantasy'"
+  },
+  "font-family:monospace": {
+    "prefix": "jff:m",
+    "body": "fontFamily: 'monospace'"
+  },
+  "font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif": {
+    "prefix": "jff:a",
+    "body": "fontFamily: ' Arial, \"Helvetica Neue\", Helvetica, sans-serif'"
+  },
+  "font-family: \"Times New Roman\", Times, Baskerville, Georgia, serif": {
+    "prefix": "jff:t",
+    "body": "fontFamily: ' \"Times New Roman\", Times, Baskerville, Georgia, serif'"
+  },
+  "font-family: Verdana, Geneva, sans-serif": {
+    "prefix": "jff:v",
+    "body": "fontFamily: ' Verdana, Geneva, sans-serif'"
+  },
+  "font-effect:|": {
+    "prefix": "jfef",
+    "body": "fontEffect: '$0'"
+  },
+  "font-effect:none": {
+    "prefix": "jfef:n",
+    "body": "fontEffect: 'none'"
+  },
+  "font-effect:engrave": {
+    "prefix": "jfef:eg",
+    "body": "fontEffect: 'engrave'"
+  },
+  "font-effect:emboss": {
+    "prefix": "jfef:eb",
+    "body": "fontEffect: 'emboss'"
+  },
+  "font-effect:outline": {
+    "prefix": "jfef:o",
+    "body": "fontEffect: 'outline'"
+  },
+  "font-emphasize:|": {
+    "prefix": "jfem",
+    "body": "fontEmphasize: '$0'"
+  },
+  "font-emphasize-position:|": {
+    "prefix": "jfemp",
+    "body": "fontEmphasizePosition: '$0'"
+  },
+  "font-emphasize-position:before": {
+    "prefix": "jfemp:b",
+    "body": "fontEmphasizePosition: 'before'"
+  },
+  "font-emphasize-position:after": {
+    "prefix": "jfemp:a",
+    "body": "fontEmphasizePosition: 'after'"
+  },
+  "font-emphasize-style:|": {
+    "prefix": "jfems",
+    "body": "fontEmphasizeStyle: '$0'"
+  },
+  "font-emphasize-style:none": {
+    "prefix": "jfems:n",
+    "body": "fontEmphasizeStyle: 'none'"
+  },
+  "font-emphasize-style:accent": {
+    "prefix": "jfems:ac",
+    "body": "fontEmphasizeStyle: 'accent'"
+  },
+  "font-emphasize-style:dot": {
+    "prefix": "jfems:dt",
+    "body": "fontEmphasizeStyle: 'dot'"
+  },
+  "font-emphasize-style:circle": {
+    "prefix": "jfems:c",
+    "body": "fontEmphasizeStyle: 'circle'"
+  },
+  "font-emphasize-style:disc": {
+    "prefix": "jfems:ds",
+    "body": "fontEmphasizeStyle: 'disc'"
+  },
+  "font-smooth:|": {
+    "prefix": "jfsm",
+    "body": "fontSmooth: '$0'"
+  },
+  "font-smooth:auto": {
+    "prefix": "jfsm:a",
+    "body": "fontSmooth: 'auto'"
+  },
+  "font-smooth:never": {
+    "prefix": "jfsm:n",
+    "body": "fontSmooth: 'never'"
+  },
+  "font-smooth:always": {
+    "prefix": "jfsm:aw",
+    "body": "fontSmooth: 'always'"
+  },
+  "font-stretch:|": {
+    "prefix": "jfst",
+    "body": "fontStretch: '$0'"
+  },
+  "font-stretch:normal": {
+    "prefix": "jfst:n",
+    "body": "fontStretch: 'normal'"
+  },
+  "font-stretch:ultra-condensed": {
+    "prefix": "jfst:uc",
+    "body": "fontStretch: 'ultra-condensed'"
+  },
+  "font-stretch:extra-condensed": {
+    "prefix": "jfst:ec",
+    "body": "fontStretch: 'extra-condensed'"
+  },
+  "font-stretch:condensed": {
+    "prefix": "jfst:c",
+    "body": "fontStretch: 'condensed'"
+  },
+  "font-stretch:semi-condensed": {
+    "prefix": "jfst:sc",
+    "body": "fontStretch: 'semi-condensed'"
+  },
+  "font-stretch:semi-expanded": {
+    "prefix": "jfst:se",
+    "body": "fontStretch: 'semi-expanded'"
+  },
+  "font-stretch:expanded": {
+    "prefix": "jfst:e",
+    "body": "fontStretch: 'expanded'"
+  },
+  "font-stretch:extra-expanded": {
+    "prefix": "jfst:ee",
+    "body": "fontStretch: 'extra-expanded'"
+  },
+  "font-stretch:ultra-expanded": {
+    "prefix": "jfst:ue",
+    "body": "fontStretch: 'ultra-expanded'"
+  },
+  "opacity:|": {
+    "prefix": "jop",
+    "body": "opacity: '$0'"
+  },
+  "opacity: $1\nfilter: alpha(opacity=$2);": {
+    "prefix": "jop+",
+    "body": "opacity:  $1\nfilter:' alpha(opacity=$2);'"
+  },
+  "filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)": {
+    "prefix": "jop:ie",
+    "body": "filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'"
+  },
+  "-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'": {
+    "prefix": "jop:ms",
+    "body": "msFilter: '\\'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\\''"
+  },
+  "resize:|": {
+    "prefix": "jrsz",
+    "body": "resize: '$0'"
+  },
+  "resize:none": {
+    "prefix": "jrsz:n",
+    "body": "resize: 'none'"
+  },
+  "resize:both": {
+    "prefix": "jrsz:b",
+    "body": "resize: 'both'"
+  },
+  "resize:horizontal": {
+    "prefix": "jrsz:h",
+    "body": "resize: 'horizontal'"
+  },
+  "resize:vertical": {
+    "prefix": "jrsz:v",
+    "body": "resize: 'vertical'"
+  },
+  "cursor:${pointer}": {
+    "prefix": "jcur",
+    "body": "cursor: '${pointer}'"
+  },
+  "cursor:auto": {
+    "prefix": "jcur:a",
+    "body": "cursor: 'auto'"
+  },
+  "cursor:default": {
+    "prefix": "jcur:d",
+    "body": "cursor: 'default'"
+  },
+  "cursor:crosshair": {
+    "prefix": "jcur:c",
+    "body": "cursor: 'crosshair'"
+  },
+  "cursor:hand": {
+    "prefix": "jcur:ha",
+    "body": "cursor: 'hand'"
+  },
+  "cursor:help": {
+    "prefix": "jcur:he",
+    "body": "cursor: 'help'"
+  },
+  "cursor:move": {
+    "prefix": "jcur:m",
+    "body": "cursor: 'move'"
+  },
+  "cursor:pointer": {
+    "prefix": "jcur:p",
+    "body": "cursor: 'pointer'"
+  },
+  "cursor:text": {
+    "prefix": "jcur:t",
+    "body": "cursor: 'text'"
+  },
+  "flex-direction:|": {
+    "prefix": "jfxd",
+    "body": "flexDirection: '$0'"
+  },
+  "flex-direction:row": {
+    "prefix": "jfxd:r",
+    "body": "flexDirection: 'row'"
+  },
+  "flex-direction:row-reverse": {
+    "prefix": "jfxd:rr",
+    "body": "flexDirection: 'row-reverse'"
+  },
+  "flex-direction:column": {
+    "prefix": "jfxd:c",
+    "body": "flexDirection: 'column'"
+  },
+  "flex-direction:column-reverse": {
+    "prefix": "jfxd:cr",
+    "body": "flexDirection: 'column-reverse'"
+  },
+  "flex-wrap: |": {
+    "prefix": "jfxw",
+    "body": "flexWrap: ' $0'"
+  },
+  "flex-wrap:nowrap": {
+    "prefix": "jfxw:n",
+    "body": "flexWrap: 'nowrap'"
+  },
+  "flex-wrap:wrap": {
+    "prefix": "jfxw:w",
+    "body": "flexWrap: 'wrap'"
+  },
+  "flex-wrap:wrap-reverse": {
+    "prefix": "jfxw:wr",
+    "body": "flexWrap: 'wrap-reverse'"
+  },
+  "flex-flow:|": {
+    "prefix": "jfxf",
+    "body": "flexFlow: '$0'"
+  },
+  "justify-content:|": {
+    "prefix": "jjc",
+    "body": "justifyContent: '$0'"
+  },
+  "justify-content:flex-start": {
+    "prefix": "jjc:fs",
+    "body": "justifyContent: 'flex-start'"
+  },
+  "justify-content:flex-end": {
+    "prefix": "jjc:fe",
+    "body": "justifyContent: 'flex-end'"
+  },
+  "justify-content:center": {
+    "prefix": "jjc:c",
+    "body": "justifyContent: 'center'"
+  },
+  "justify-content:space-between": {
+    "prefix": "jjc:sb",
+    "body": "justifyContent: 'space-between'"
+  },
+  "justify-content:space-around": {
+    "prefix": "jjc:sa",
+    "body": "justifyContent: 'space-around'"
+  },
+  "align-items:|": {
+    "prefix": "jai",
+    "body": "alignItems: '$0'"
+  },
+  "align-items:flex-start": {
+    "prefix": "jai:fs",
+    "body": "alignItems: 'flex-start'"
+  },
+  "align-items:flex-end": {
+    "prefix": "jai:fe",
+    "body": "alignItems: 'flex-end'"
+  },
+  "align-items:center": {
+    "prefix": "jai:c",
+    "body": "alignItems: 'center'"
+  },
+  "align-items:baseline": {
+    "prefix": "jai:b",
+    "body": "alignItems: 'baseline'"
+  },
+  "align-items:stretch": {
+    "prefix": "jai:s",
+    "body": "alignItems: 'stretch'"
+  },
+  "align-content:|": {
+    "prefix": "jac",
+    "body": "alignContent: '$0'"
+  },
+  "align-content:flex-start": {
+    "prefix": "jac:fs",
+    "body": "alignContent: 'flex-start'"
+  },
+  "align-content:flex-end": {
+    "prefix": "jac:fe",
+    "body": "alignContent: 'flex-end'"
+  },
+  "align-content:center": {
+    "prefix": "jac:c",
+    "body": "alignContent: 'center'"
+  },
+  "align-content:space-between": {
+    "prefix": "jac:sb",
+    "body": "alignContent: 'space-between'"
+  },
+  "align-content:space-around": {
+    "prefix": "jac:sa",
+    "body": "alignContent: 'space-around'"
+  },
+  "align-content:stretch": {
+    "prefix": "jac:s",
+    "body": "alignContent: 'stretch'"
+  },
+  "order:|": {
+    "prefix": "jord",
+    "body": "order: '$0'"
+  },
+  "flex-grow:|": {
+    "prefix": "jfxg",
+    "body": "flexGrow: '$0'"
+  },
+  "flex-shrink:|": {
+    "prefix": "jfxsh",
+    "body": "flexShrink: '$0'"
+  },
+  "flex-basis:|": {
+    "prefix": "jfxb",
+    "body": "flexBasis: '$0'"
+  },
+  "flex:|": {
+    "prefix": "jfx",
+    "body": "flex: '$0'"
+  },
+  "align-self:|": {
+    "prefix": "jas",
+    "body": "alignSelf: '$0'"
+  },
+  "align-self:auto": {
+    "prefix": "jas:a",
+    "body": "alignSelf: 'auto'"
+  },
+  "align-self:flex-start": {
+    "prefix": "jas:fs",
+    "body": "alignSelf: 'flex-start'"
+  },
+  "align-self:flex-end": {
+    "prefix": "jas:fe",
+    "body": "alignSelf: 'flex-end'"
+  },
+  "align-self:center": {
+    "prefix": "jas:c",
+    "body": "alignSelf: 'center'"
+  },
+  "align-self:baseline": {
+    "prefix": "jas:b",
+    "body": "alignSelf: 'baseline'"
+  },
+  "align-self:stretch": {
+    "prefix": "jas:s",
+    "body": "alignSelf: 'stretch'"
+  },
+  "page-break-before:|": {
+    "prefix": "jpgbb",
+    "body": "pageBreakBefore: '$0'"
+  },
+  "page-break-before:auto": {
+    "prefix": "jpgbb:au",
+    "body": "pageBreakBefore: 'auto'"
+  },
+  "page-break-before:always": {
+    "prefix": "jpgbb:al",
+    "body": "pageBreakBefore: 'always'"
+  },
+  "page-break-before:left": {
+    "prefix": "jpgbb:l",
+    "body": "pageBreakBefore: 'left'"
+  },
+  "page-break-before:right": {
+    "prefix": "jpgbb:r",
+    "body": "pageBreakBefore: 'right'"
+  },
+  "page-break-inside:|": {
+    "prefix": "jpgbi",
+    "body": "pageBreakInside: '$0'"
+  },
+  "page-break-inside:auto": {
+    "prefix": "jpgbi:au",
+    "body": "pageBreakInside: 'auto'"
+  },
+  "page-break-inside:avoid": {
+    "prefix": "jpgbi:av",
+    "body": "pageBreakInside: 'avoid'"
+  },
+  "page-break-after:|": {
+    "prefix": "jpgba",
+    "body": "pageBreakAfter: '$0'"
+  },
+  "page-break-after:auto": {
+    "prefix": "jpgba:au",
+    "body": "pageBreakAfter: 'auto'"
+  },
+  "page-break-after:always": {
+    "prefix": "jpgba:al",
+    "body": "pageBreakAfter: 'always'"
+  },
+  "page-break-after:left": {
+    "prefix": "jpgba:l",
+    "body": "pageBreakAfter: 'left'"
+  },
+  "page-break-after:right": {
+    "prefix": "jpgba:r",
+    "body": "pageBreakAfter: 'right'"
+  },
+  "orphans:|": {
+    "prefix": "jorp",
+    "body": "orphans: '$0'"
+  },
+  "user-select:${none}": {
+    "prefix": "jus",
+    "body": "userSelect: '${none}'"
+  },
+  "widows:|": {
+    "prefix": "jwid",
+    "body": "widows: '$0'"
+  },
+  "-webkit-font-smoothing:${antialiased}": {
+    "prefix": "jwfsm",
+    "body": "webkitFontSmoothing: '${antialiased}'"
+  },
+  "-webkit-font-smoothing:antialiased": {
+    "prefix": "jwfsm:a",
+    "body": "webkitFontSmoothing: 'antialiased'"
+  },
+  "-webkit-font-smoothing:subpixel-antialiased": {
+    "prefix": "jwfsm:sa",
+    "body": "webkitFontSmoothing: 'subpixel-antialiased'"
+  },
+  "-webkit-font-smoothing:none": {
+    "prefix": "jwfsm:n",
+    "body": "webkitFontSmoothing: 'none'"
+  },
+  "'@media ${1:screen}': {\n\t$0\n}": {
+    "prefix": "j@m",
+    "body": "'@media ${1:screen}': {\n\t$0\n}"
+  },
+  "'@keyframes ${1:identifier}': {\n\t${2:from}: { ${3} },\n\t${4:to}: { ${5} }\n}": {
+    "prefix": "j@kf",
+    "body": "'@keyframes ${1:identifier}': {\n\t${2:from}: { ${3} },\n\t${4:to}: { ${5} }\n}"
+  },
+  "@font-face {\n\tfontFamily: $0\n\tsrc:url({$1:url})\n}$0": {
+    "prefix": "j@f",
+    "body": "@font-face {\n\tfontFamily: $0\n\tsrc:url({$1:url})\n}$0"
+  },
+  "'@global': {\n\t$0\n}": {
+    "prefix": "j@g",
+    "body": "'@global': {\n\t$0\n}"
+  },
+  "extend: $0": {
+    "prefix": "jext",
+    "body": "extend: ' $0'"
+  },
+  "composes: $0": {
+    "prefix": "jcom",
+    "body": "composes: ' $0'"
+  },
+  "'&:active': {\n\t$0\n}": {
+    "prefix": "j&ac",
+    "body": "'&:active': {\n\t$0\n}"
+  },
+  "'&:after': {\n\t$0\n}": {
+    "prefix": "j&a",
+    "body": "'&:after': {\n\t$0\n}"
+  },
+  "'&:before': {\n\t$0\n}": {
+    "prefix": "j&b",
+    "body": "'&:before': {\n\t$0\n}"
+  },
+  "'&:checked': {\n\t$0\n}": {
+    "prefix": "j&c",
+    "body": "'&:checked': {\n\t$0\n}"
+  },
+  "'&:disabled': {\n\t$0\n}": {
+    "prefix": "j&d",
+    "body": "'&:disabled': {\n\t$0\n}"
+  },
+  "'&:enabled': {\n\t$0\n}": {
+    "prefix": "j&e",
+    "body": "'&:enabled': {\n\t$0\n}"
+  },
+  "'&:first-child': {\n\t$0\n}": {
+    "prefix": "j&fc",
+    "body": "'&:first-child': {\n\t$0\n}"
+  },
+  "'&:first-letter': {\n\t$0\n}": {
+    "prefix": "j&fle",
+    "body": "'&:first-letter': {\n\t$0\n}"
+  },
+  "'&:first-line': {\n\t$0\n}": {
+    "prefix": "j&fli",
+    "body": "'&:first-line': {\n\t$0\n}"
+  },
+  "'&:focus': {\n\t$0\n}": {
+    "prefix": "j&f",
+    "body": "'&:focus': {\n\t$0\n}"
+  },
+  "'&:hover': {\n\t$0\n}": {
+    "prefix": "j&h",
+    "body": "'&:hover': {\n\t$0\n}"
+  },
+  "'&:lang()': {\n\t$0\n}": {
+    "prefix": "j&ln",
+    "body": "'&:lang()': {\n\t$0\n}"
+  },
+  "'&:last-child': {\n\t$0\n}": {
+    "prefix": "j&lc",
+    "body": "'&:last-child': {\n\t$0\n}"
+  },
+  "'&:link': {\n\t$0\n}": {
+    "prefix": "j&li",
+    "body": "'&:link': {\n\t$0\n}"
+  },
+  "'&:nth-child()': {\n\t$0\n}": {
+    "prefix": "j&nc",
+    "body": "'&:nth-child()': {\n\t$0\n}"
+  },
+  "'&:visited': {\n\t$0\n}": {
+    "prefix": "j&v",
+    "body": "'&:visited': {\n\t$0\n}"
+  },
+  "'&:target': {\n\t$0\n}": {
+    "prefix": "j&tg",
+    "body": "'&:target': {\n\t$0\n}"
+  },
+  "'&:first-of-type': {\n\t$0\n}": {
+    "prefix": "j&fot",
+    "body": "'&:first-of-type': {\n\t$0\n}"
+  },
+  "'&:last-of-type': {\n\t$0\n}": {
+    "prefix": "j&lot",
+    "body": "'&:last-of-type': {\n\t$0\n}"
+  },
+  "'&:nth-of-type()': {\n\t$0\n}": {
+    "prefix": "j&not",
+    "body": "'&:nth-of-type()': {\n\t$0\n}"
+  },
+  "'&:not()': {\n\t$0\n}": {
+    "prefix": "j&no",
+    "body": "'&:not()': {\n\t$0\n}"
+  }
+}
