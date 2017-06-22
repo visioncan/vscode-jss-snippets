@@ -1,12 +1,12 @@
 const source = require('emmet/lib/snippets.json').css.snippets
-const formater = require('./libs/formater')
+const formatter = require('./libs/formatter')
 const { unsupport, adds, values, property } = require('./libs/handlers')
 
 const converter = {
   snippets: [],
 
   input (source) {
-    this.snippets = formater.inputToArray(source)
+    this.snippets = formatter.inputToArray(source)
     return this
   },
 
@@ -18,8 +18,8 @@ const converter = {
   },
 
   output () {
-    const data = formater.outputToObject(this.snippets)
-    formater.outputFile(data)
+    const data = formatter.outputToObject(this.snippets)
+    formatter.outputFile(data)
     return this
   }
 }

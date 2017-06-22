@@ -1,5 +1,5 @@
 const camelCase = require('camelcase')
-const formater = require('./formater')
+const formater = require('./formatter')
 
 const unsupportMap = ['@import', '@media', '@f', '@i', '@m', '@f+', '@kf']
 
