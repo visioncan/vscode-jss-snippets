@@ -1,12 +1,6 @@
 const camelCase = require('camelcase')
 const formater = require('./formatter')
-
-const unsupportMap = ['@import', '@media', '@f', '@i', '@m', '@f+', '@kf']
-
-const addonsnip = {
-  "@m": "'@media ${1:screen}': {\n\t$0\n}",
-  "@kf": "'@keyframes ${1:identifier}': {\n\t${2:from}: { ${3} },\n\t${4:to}: { ${5} }\n}"
-}
+const { unsupportMap, addsnip } = require('./assets')
 
 module.exports = {
   unsupport (snippets) {
@@ -16,11 +10,12 @@ module.exports = {
   },
 
   adds (snippets) {
-    return snippets.concat(formater.inputToArray(addonsnip))
+    return snippets.concat(formater.inputToArray(addsnip))
   },
 
   property (snippets) {
     return snippets.map(item => {
+      item.shortKey = `j${item.shortKey}`
       item.content = item.content.replace(/^([a-z-]+)\:/, prop => `${camelCase(prop)} `)
       return item
     })
@@ -30,7 +25,6 @@ module.exports = {
     return snippets.map(item => {
       item.content = item.content
         .replace('|', '$0')
-        // .replace(/\:([a-z-]+)$/, (m, values) => {
         .replace(/\:(.*)$/, (m, values) => {
           values = values.replace(/\'/g, '\\\'')
           return `:\'${values}\'`
