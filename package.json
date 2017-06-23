@@ -2,7 +2,7 @@
   "name": "vscode-jss-snippets",
   "displayName": "JSS Snippets",
   "description": "Code snippets for JSS",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "visioncan",
   "engines": {
     "vscode": "^1.13.0"
