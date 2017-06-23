@@ -26,7 +26,7 @@ module.exports = {
       item.content = item.content
         .replace('|', '$0')
         .replace(/\:(.*)$/, (m, values) => {
-          values = values.replace(/\'/g, '\\\'')
+          values = values.replace(/\'/g, '\\"')
           return `:\'${values}\'`
         })
       return item

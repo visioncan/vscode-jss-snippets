@@ -1,5 +1,5 @@
 module.exports = {
-  unsupportMap: ['@import', '@media', '@f', '@f+', '@i', '@m', '@kf'],
+  unsupportMap: ['@import', '@media', '@f', '@f+', '@i', '@m', '@kf', 'cm'],
   addsnip: {
     '@m': "'@media ${1:screen}': {\n\t$0\n}",
     '@kf': "'@keyframes ${1:identifier}': {\n\t${2:from}: { ${3} },\n\t${4:to}: { ${5} }\n}",

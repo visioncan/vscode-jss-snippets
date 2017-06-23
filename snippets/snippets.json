@@ -1109,7 +1109,7 @@
   },
   "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:x}.png',sizingMethod='${2:crop}')": {
     "prefix": "jbg:ie",
-    "body": "filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\\'${1:x}.png\\',sizingMethod=\\'${2:crop}\\')'"
+    "body": "filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\\\"${1:x}.png\\\",sizingMethod=\\\"${2:crop}\\\")'"
   },
   "background-color:#${1:fff}": {
     "prefix": "jbgc",
@@ -1255,13 +1255,9 @@
     "prefix": "jc:ra",
     "body": "color: 'rgba(${1:0}, ${2:0}, ${3:0}, .${4:5})'"
   },
-  "/* |${child} */": {
-    "prefix": "jcm",
-    "body": "/* $0${child} */"
-  },
   "content:'|'": {
     "prefix": "jcnt",
-    "body": "content: '\\'$0\\''"
+    "body": "content: '\\\"$0\\\"'"
   },
   "content:normal": {
     "prefix": "jct:n",
@@ -1405,11 +1401,11 @@
   },
   "quotes:'\\00AB' '\\00BB' '\\201E' '\\201C'": {
     "prefix": "jq:ru",
-    "body": "quotes: '\\'\\00AB\\' \\'\\00BB\\' \\'\\201E\\' \\'\\201C\\''"
+    "body": "quotes: '\\\"\\00AB\\\" \\\"\\00BB\\\" \\\"\\201E\\\" \\\"\\201C\\\"'"
   },
   "quotes:'\\201C' '\\201D' '\\2018' '\\2019'": {
     "prefix": "jq:en",
-    "body": "quotes: '\\'\\201C\\' \\'\\201D\\' \\'\\2018\\' \\'\\2019\\''"
+    "body": "quotes: '\\\"\\201C\\\" \\\"\\201D\\\" \\\"\\2018\\\" \\\"\\2019\\\"'"
   },
   "content:|": {
     "prefix": "jct",
@@ -2173,7 +2169,7 @@
   },
   "-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'": {
     "prefix": "jop:ms",
-    "body": "msFilter: '\\'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\\''"
+    "body": "msFilter: '\\\"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)\\\"'"
   },
   "resize:|": {
     "prefix": "jrsz",
