@@ -1,8 +1,8 @@
 {
   "name": "vscode-jss-snippets",
   "displayName": "JSS Snippets",
-  "description": "Code snippets for JSS",
-  "version": "0.2.1",
+  "description": "CSS in JS snippets for VS Code",
+  "version": "0.2.2",
   "publisher": "visioncan",
   "engines": {
     "vscode": "^1.13.0"
@@ -10,7 +10,7 @@
   "categories": [
     "Snippets"
   ],
-  "icon": "images/icon.svg",
+  "icon": "images/icon.png",
   "contributes": {
     "snippets": [
       {
@@ -36,10 +36,15 @@
     "url": "git+https://github.com/visioncan/vscode-jss-snippets.git"
   },
   "keywords": [
-    "jss",
-    "vscode",
+    "emmet",
+    "css",
     "cssinjs",
-    "snippets"
+    "css-in-js",
+    "jss",
+    "styled-components",
+    "inline-style",
+    "snippets",
+    "vscode"
   ],
   "license": "MIT",
   "bugs": {

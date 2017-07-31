@@ -2,6 +2,8 @@
 
 [JSS](http://cssinjs.org/) Emmet like snippets for Visual Studio Code in JavaScript file.
 
+✨ Using with any library that accepts style as JavaScript object is OK. like styled-components, aphrodite, glamor, glamorous and more.
+
 ## Usage
 
 All snippets start with `j` prefix.
